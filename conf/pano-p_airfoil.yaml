@@ -1,0 +1,27 @@
+# PANO-P: H=4, M=512, C=96.
+exp: airfoil-PANO-P
+seed: 0
+
+data_name: airfoil
+data_root: ./dataset
+train_batch_size: 4
+val_batch_size: 4
+
+model_name: PANO-P
+mixed_precision: none
+out_droprate: 0.0
+
+loss_name: rL2
+loss_weight: '1'
+optimizer_name: AdamW
+lr: 0.0008
+weight_decay: 5.0e-05
+scheduler_name: OneCycle
+min_lr: 1.0e-05
+warmup_epochs: 100
+
+epoch: 500
+grad_clip: 1000.0
+n_train_vis: 4
+log_print_interval_epoch: 1
+model_save_interval_epoch: -1

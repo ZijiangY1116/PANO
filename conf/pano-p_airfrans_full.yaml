@@ -1,0 +1,32 @@
+# PANO-P: H=4, M=512, C=96.
+exp: airfrans_full-PANO-P
+seed: 0
+
+data_name: airfrans_full
+data_root: ./dataset
+train_batch_size: 4
+val_batch_size: 4
+airfrans_subsampling: 32000
+airfrans_eval_subsampling: 32000
+airfrans_sampling_mode: all_surface
+airfrans_eval_sampling_mode: all_surface
+airfrans_surface_weight: 1.0
+
+model_name: PANO-P
+mixed_precision: none
+out_droprate: 0.1
+
+loss_name: rL2
+loss_weight: '1'
+optimizer_name: AdamW
+lr: 0.0002
+weight_decay: 5.0e-05
+scheduler_name: OneCycle
+min_lr: 1.0e-05
+warmup_epochs: 100
+
+epoch: 1600
+grad_clip: 1000.0
+n_train_vis: 4
+log_print_interval_epoch: 1
+model_save_interval_epoch: -1
