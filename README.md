@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href=''><img src='https://img.shields.io/badge/Arxiv-Paper-Red?style=flat&logo=arxiv&logoColor=red&color=red'></a>
+<a href='https://arxiv.org/abs/2611.22782'><img src='https://img.shields.io/badge/Arxiv-Paper-Red?style=flat&logo=arxiv&logoColor=red&color=red'></a>
 <a href='https://github.com/ZijiangY1116/PANO'><img src='https://img.shields.io/badge/GitHub-Code-blue?style=flat&logo=github&color=blue'></a>
 <a href='https://huggingface.co/ZijiangY/PANO'><img src='https://img.shields.io/badge/HuggingFace-Model-Yellow?style=flat&logo=huggingface&color=yellow'></a>
 
